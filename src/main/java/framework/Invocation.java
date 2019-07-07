@@ -1,6 +1,7 @@
 package framework;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 /**
  * 调用对象信息,通过这些信息可以将一个接口实现类复原
@@ -64,5 +65,15 @@ public class Invocation implements Serializable {
         this.methodName = methodName;
         this.paramTypes = paramTypes;
         this.params = params;
+    }
+
+    @Override
+    public String toString() {
+        return "Invocation{" +
+                "interfaceName='" + interfaceName + '\'' +
+                ", methodName='" + methodName + '\'' +
+                ", paramTypes=" + Arrays.toString(paramTypes) +
+                ", params=" + Arrays.toString(params) +
+                '}';
     }
 }

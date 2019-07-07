@@ -23,6 +23,7 @@ public class HttpServerHandler {
             Invocation invocation = (Invocation) ois.readObject();
 
             /**
+             * 从本地注册map中找到接口名对应的实现类
              * 寻找注册中心的类,通过反射执行方法
              */
             Class impClass= LocalRegister.get(invocation.getInterfaceName());

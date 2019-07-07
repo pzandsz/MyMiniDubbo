@@ -1,7 +1,6 @@
 package consumer;
 
-import framework.Invocation;
-import protocol.http.HttpClient;
+import framework.ProxyFactory;
 import provider.api.HelloService;
 
 /**
@@ -11,17 +10,15 @@ import provider.api.HelloService;
 public class Consumer {
 
     public static void main(String[] args) {
+        /**
+         * 通过使用代理对象，简化main方法体
+         */
+        HelloService helloService = ProxyFactory.getProxy(HelloService.class);
 
-        //获得一个HttpClient对象
-        HttpClient httpClient=new HttpClient();
-        //发送消息
-        Invocation invocation=new Invocation(HelloService.class.getName(),"sayHello",new Class[]{
-                String.class
-        },new Object[]{
-                "welcome to my dubbo example...."
-        });
-        String result =httpClient.send("localhost", 8080, invocation);
+        System.out.println(helloService.sayHello("你好啊"));
 
-        System.out.println(result);
+
+
+
     }
 }

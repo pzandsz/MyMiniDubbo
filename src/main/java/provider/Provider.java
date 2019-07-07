@@ -1,11 +1,13 @@
 package provider;
 
 import framework.URL;
+import protocol.dubbo.NettyServer;
 import protocol.http.HttpServer;
 import provider.api.HelloService;
 import provider.imp.HelloServiceImp;
 import register.RemoteMaopRegister;
 
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -14,7 +16,7 @@ import java.util.Map;
  */
 public class Provider {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //1.本地注册{服务名：实现类}
         LocalRegister.register(HelloService.class.getName(), HelloServiceImp.class);
 
@@ -23,7 +25,11 @@ public class Provider {
         RemoteMaopRegister.register(HelloService.class.getName(),url);
 
         //3.启动tomcat
-        HttpServer httpServer=new HttpServer();
-        httpServer.start("localhost",8080);
+        NettyServer nettyServer=new NettyServer();
+
+        nettyServer.start("localhost",8080);
+
+//        HttpServer httpServer=new HttpServer();
+//        httpServer.start("localhost",8080);
     }
 }

@@ -10,7 +10,10 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
+/**
+ * 模拟发送请求
+ * @author 曾鹏
+ */
 public class HttpClient {
     public String send(String hostname, Integer port, Invocation invocation) {
 
