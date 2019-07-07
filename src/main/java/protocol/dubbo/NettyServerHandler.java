@@ -27,7 +27,6 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         Invocation invocation= (Invocation) msg;
 
         System.out.println("server: msg==>"+msg);
-
         //获得Class
         Class serviceImpl= LocalRegister.get(invocation.getInterfaceName());
 
