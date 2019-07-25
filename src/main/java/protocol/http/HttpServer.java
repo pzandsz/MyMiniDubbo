@@ -12,7 +12,7 @@ import org.apache.catalina.startup.Tomcat;
  */
 public class HttpServer {
     /**
-     *
+     * 启动内嵌的tomcat
      * @param hostname ip地址
      * @param port 端口号
      */
@@ -29,12 +29,12 @@ public class HttpServer {
 
         Service service = server.findService("Tomcat");
 
-        // 构建Connector
+        // 构建Connector连接器，用于处理连接请求
         Connector connector = new Connector();
         connector.setPort(port);
         connector.setURIEncoding("UTF-8");
 
-        // 构建Engine
+        // 构建Engine 创建容器
         Engine engine = new StandardEngine();
         engine.setDefaultHost(hostname);
 
@@ -56,7 +56,10 @@ public class HttpServer {
         service.addConnector(connector);
         // service在getServer时就被添加到server节点了
 
-        // tomcat是一个servlet,设置路径与映射
+        /**
+         * tomcat是一个servlet,设置路径与映射,将请求交给dispatcher处理
+         * 类似于配置web.xml
+         */
         tomcat.addServlet(contextPath,"dispatcher",new DispatcherServlet());
         context.addServletMappingDecoded("/*","dispatcher");
 

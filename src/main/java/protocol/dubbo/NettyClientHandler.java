@@ -5,7 +5,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
 
-import java.util.concurrent.Callable;
 
 /**
  * 继承ChannelInboundHandlerAdapter

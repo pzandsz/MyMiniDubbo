@@ -8,8 +8,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
+
 
 import java.net.InetSocketAddress;
 
@@ -22,6 +21,11 @@ public class NettyServer {
     private ServerBootstrap bootstrap;
     private NioEventLoopGroup eventLoopGroup;
 
+    /**
+     * 开启tomcat
+     * @param hostName
+     * @param port
+     */
     public void start(String hostName, int port){
 
         try {

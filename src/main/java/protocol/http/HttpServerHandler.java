@@ -27,9 +27,11 @@ public class HttpServerHandler {
              * 寻找注册中心的类,通过反射执行方法
              */
             Class impClass= LocalRegister.get(invocation.getInterfaceName());
-            Method method=impClass.getMethod(invocation.getMethodName(),invocation.getParamTypes());
+            Method method=impClass.getMethod
+                    (invocation.getMethodName(),invocation.getParamTypes());
 
-            String result= (String) method.invoke(impClass.newInstance(),invocation.getParams());
+            String result= (String) method.invoke
+                    (impClass.newInstance(),invocation.getParams());
             System.out.println(result);
 
             //返回结果
@@ -47,6 +49,5 @@ public class HttpServerHandler {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
-
     }
 }

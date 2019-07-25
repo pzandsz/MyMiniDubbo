@@ -44,17 +44,25 @@ public class ProxyFactory {
                 //HttpClient httpClient=new HttpClient();
 
 
-                //发送的消息
+                //发送给服务提供者的信息，服务提供方将通过这些信息和反射机制来执行方法并返回结果
                 Invocation invocation=new Invocation(interfaceClass.getName(),method.getName(),
                         method.getParameterTypes(),args);
 
 //                System.out.println("2.invocation:"+invocation.toString());
 
+                /**
+                 * 通过接口名称向注册中心获得消息发送的地址
+                 * 实际上在使用zookeeper作为远程注册中心时，地址信息会写在配置文件中
+                 */
                 URL url= RemoteMaopRegister.random(interfaceClass.getName());
 
 //                System.out.println("3.url:"+url);
 
-                NettyClient nettyClient=new NettyClient(url.getHostname(), url.getPort(),invocation);
+                /**
+                 * 向指定的地址发送请求并获得响应
+                 */
+                NettyClient nettyClient=new NettyClient(url.getHostname(),
+                        url.getPort(),invocation);
 
 //                String result =httpClient.send(url.getHostname(), url.getPort(), invocation);
 

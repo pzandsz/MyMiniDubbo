@@ -13,8 +13,13 @@ import java.util.*;
 public class RemoteMaopRegister {
     private static Map<String,List<URL>> REGISTER=new HashMap<String, List<URL>>();
 
+    private  final static String path="D://MyMiniDubbo/register.txt";
+
     /**
      * 注册
+     * 以接口的全路径类名来作为key,value存储套接字信息，
+     * 服务提供者将接口名称和套接字信息作为KV存储的map中
+     * 服务消费者通过接口名称获得套接字信息，并向套接字中指定的地址发起远程调用请求
      * @param interfaceName
      * @param url
      */
@@ -50,7 +55,7 @@ public class RemoteMaopRegister {
     public static void saveFile() throws IOException {
         ObjectOutputStream obs=null;
         try {
-            FileOutputStream fileOutputStream=new FileOutputStream("D://MyMiniDubbo/register.txt");
+            FileOutputStream fileOutputStream=new FileOutputStream(path);
             //包装成ObjectOutputStream
             obs =new ObjectOutputStream(fileOutputStream);
             //将map对象存入文件中
@@ -74,7 +79,7 @@ public class RemoteMaopRegister {
     public static Map<String,List<URL>> getFile(){
 
         try {
-            FileInputStream fileInputStream = new FileInputStream("D://MyMiniDubbo/register.txt");
+            FileInputStream fileInputStream = new FileInputStream(path);
             ObjectInputStream ois=new ObjectInputStream(fileInputStream);
 
              return  (Map<String, List<URL>>) ois.readObject();
