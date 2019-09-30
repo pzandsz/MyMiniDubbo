@@ -7,13 +7,13 @@ import java.io.*;
 import java.util.*;
 
 /**
- * 用于存储远程信息
+ * 通过存储在本地文件的方式模拟 存储远程信息
  * @author 曾鹏
  */
 public class RemoteMapRegister {
     private static Map<String,List<URL>> REGISTER=new HashMap<String, List<URL>>();
 
-    private  final static String path="D://MyMiniDubbo/register.txt";
+    private  final static String PATH="D://MyMiniDubbo/register.txt";
 
     /**
      * 注册
@@ -55,7 +55,7 @@ public class RemoteMapRegister {
     public static void saveFile() throws IOException {
         ObjectOutputStream obs=null;
         try {
-            FileOutputStream fileOutputStream=new FileOutputStream(path);
+            FileOutputStream fileOutputStream=new FileOutputStream(PATH);
             //包装成ObjectOutputStream
             obs =new ObjectOutputStream(fileOutputStream);
             //将map对象存入文件中
@@ -79,7 +79,7 @@ public class RemoteMapRegister {
     public static Map<String,List<URL>> getFile(){
 
         try {
-            FileInputStream fileInputStream = new FileInputStream(path);
+            FileInputStream fileInputStream = new FileInputStream(PATH);
             ObjectInputStream ois=new ObjectInputStream(fileInputStream);
 
              return  (Map<String, List<URL>>) ois.readObject();

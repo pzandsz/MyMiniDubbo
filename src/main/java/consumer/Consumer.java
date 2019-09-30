@@ -16,7 +16,7 @@ public class Consumer {
         HelloService helloService = ProxyFactory.getProxy(HelloService.class);
 
 
-        System.out.println(helloService.sayHello("你好啊"));
+        System.out.println(helloService.fromJson2Object("你好啊"));
 
 
 

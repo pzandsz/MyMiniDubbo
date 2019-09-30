@@ -8,4 +8,8 @@ public interface HelloService {
      * 打招呼
      */
     String sayHello(String message);
+
+
+
+    Object fromJson2Object(String jsonStr);
 }

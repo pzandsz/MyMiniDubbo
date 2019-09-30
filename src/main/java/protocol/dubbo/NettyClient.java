@@ -14,7 +14,7 @@ import io.netty.handler.codec.serialization.ObjectEncoder;
 import java.net.InetSocketAddress;
 
 /**
- *
+ * 基于Netty的Client端
  * @author 曾鹏
  */
 public class NettyClient {
@@ -57,6 +57,7 @@ public class NettyClient {
                             ch.pipeline().addLast(nettyClientHandler);
                         }
                     });
+
 
             ChannelFuture future = bootstrap.connect().sync();
 
