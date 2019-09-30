@@ -10,7 +10,7 @@ import java.util.*;
  * 用于存储远程信息
  * @author 曾鹏
  */
-public class RemoteMaopRegister {
+public class RemoteMapRegister {
     private static Map<String,List<URL>> REGISTER=new HashMap<String, List<URL>>();
 
     private  final static String path="D://MyMiniDubbo/register.txt";

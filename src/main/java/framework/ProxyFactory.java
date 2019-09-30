@@ -1,15 +1,10 @@
 package framework;
 
 import protocol.dubbo.NettyClient;
-import protocol.dubbo.NettyServer;
-import protocol.http.HttpClient;
-import provider.api.HelloService;
-import register.RemoteMaopRegister;
-
+import register.RemoteMapRegister;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.Random;
 
 /**
  * 代理工厂
@@ -54,7 +49,7 @@ public class ProxyFactory {
                  * 通过接口名称向注册中心获得消息发送的地址
                  * 实际上在使用zookeeper作为远程注册中心时，地址信息会写在配置文件中
                  */
-                URL url= RemoteMaopRegister.random(interfaceClass.getName());
+                URL url= RemoteMapRegister.random(interfaceClass.getName());
 
 //                System.out.println("3.url:"+url);
 
