@@ -20,6 +20,7 @@ public class HttpServerHandler {
             ServletInputStream inputStream = req.getInputStream();
             ObjectInputStream ois=new ObjectInputStream(inputStream);
 
+            //读取存放在文本中的invocation信息，可以把它当做一个本地存储节点
             Invocation invocation = (Invocation) ois.readObject();
 
             /**
