@@ -11,7 +11,7 @@ public class Consumer {
 
     public static void main(String[] args) {
         /**
-         * 通过使用代理对象，简化main方法体
+         * 通过制定Class,创建代理对象，代理对象会负责将数据发送到服务提供方
          *
          */
         HelloService helloService = ProxyFactory.getProxy(HelloService.class);
