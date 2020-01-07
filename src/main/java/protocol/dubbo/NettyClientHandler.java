@@ -8,7 +8,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
  * 继承ChannelInboundHandlerAdapter
- * @author 曾鹏
+ * @author 
  */
 public class NettyClientHandler extends ChannelInboundHandlerAdapter{
     private ChannelHandlerContext context;
@@ -18,10 +18,13 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter{
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws InterruptedException {
+        System.out.println("成功建立连接!!!");
+        Thread.sleep(1000);
         context=ctx;
-        System.out.println("发送数据");
-
+        System.out.println("开始想服务端发送数据....");
+        Thread.sleep(1000);
         context.writeAndFlush(invocation);
+        System.out.println("发送完毕！");
 
 
     }
@@ -31,8 +34,9 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter{
      */
     @Override
     public synchronized void channelRead(ChannelHandlerContext ctx, Object msg) {
+       Thread.sleep(1000);
         result = (String) msg;
-        System.out.println("result===>"+result);
+        System.out.println("接受服务端返回的执行结果,result: "+result);
     }
 
     /**
