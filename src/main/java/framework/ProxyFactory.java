@@ -1,5 +1,6 @@
 package framework;
 
+import lombok.extern.slf4j.Slf4j;
 import protocol.dubbo.NettyClient;
 import protocol.dubbo.NettyServer;
 import protocol.http.HttpClient;
@@ -15,6 +16,7 @@ import java.util.Random;
  * 代理工厂
  * @author 曾鹏
  */
+@Slf4j
 public class ProxyFactory {
     public static <T> T getProxy(final Class interfaceClass){
 
@@ -39,26 +41,17 @@ public class ProxyFactory {
                      */
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-//                System.out.println("1.invoke方法调用...");
-                //通过网络获得一个HttpClient对象
-                //HttpClient httpClient=new HttpClient();
-
-
+                log.info("interfaceClass:{" + interfaceClass + "}");
                 //发送给服务提供者的信息，服务提供方将通过这些信息和反射机制来执行方法并返回结果
                 Invocation invocation=new Invocation(interfaceClass.getName(),method.getName(),
                         method.getParameterTypes(),args);
-
-//                System.out.println("2.invocation:"+invocation.toString());
 
                 /**
                  * 通过接口名称向注册中心获得消息发送的地址
                  * 实际上在使用zookeeper作为远程注册中心时，地址信息会写在配置文件中
                  */
                 URL url= RemoteMaopRegister.random(interfaceClass.getName());
-
-//                System.out.println("3.url:"+url);
-
-                /**
+                 /**
                  * 向指定的地址发送请求并获得响应
                  */
                 NettyClient nettyClient=new NettyClient(url.getHostname(),
