@@ -1,5 +1,7 @@
 package framework;
 
+import lombok.*;
+
 import java.io.Serializable;
 import java.util.Arrays;
 
@@ -7,6 +9,11 @@ import java.util.Arrays;
  * 调用对象信息,通过这些信息可以将一个接口实现类复原
  * @author 曾鹏
  */
+@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Invocation implements Serializable {
 
     /**
@@ -28,44 +35,6 @@ public class Invocation implements Serializable {
      */
     private Object[] params;
 
-    public String getInterfaceName() {
-        return interfaceName;
-    }
-
-    public void setInterfaceName(String interfaceName) {
-        this.interfaceName = interfaceName;
-    }
-
-    public String getMethodName() {
-        return methodName;
-    }
-
-    public void setMethodName(String methodName) {
-        this.methodName = methodName;
-    }
-
-    public Class[] getParamTypes() {
-        return paramTypes;
-    }
-
-    public void setParamTypes(Class[] paramTypes) {
-        this.paramTypes = paramTypes;
-    }
-
-    public Object[] getParams() {
-        return params;
-    }
-
-    public void setParams(Object[] params) {
-        this.params = params;
-    }
-
-    public Invocation(String interfaceName, String methodName, Class[] paramTypes, Object[] params) {
-        this.interfaceName = interfaceName;
-        this.methodName = methodName;
-        this.paramTypes = paramTypes;
-        this.params = params;
-    }
 
     @Override
     public String toString() {
