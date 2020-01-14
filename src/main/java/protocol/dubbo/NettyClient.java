@@ -59,9 +59,6 @@ public class NettyClient {
                     });
 
             ChannelFuture future = bootstrap.connect().sync();
-
-
-
             future.channel().closeFuture().sync();
 
 
