@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
  *
  * Inbound
  *
- * 继承ChannelInboundHandlerAdapter
+ * 继承ChannelInboundHandlerAdapter,Inbound事件对应的IO读请求
  * @author 曾鹏
  */
 
@@ -47,7 +47,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     /**
-     * 服务器端读到网络数据后的处理
+     * 服务器端读到网络数据后的处理,这里实现异步编程
      * @param ctx
      * @throws Exception
      */

@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70cf0afa-64ba-4c58-802f-b42ffa0801af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sensetive/SensetiveWordFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sensetiveWord.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/EventGroupLoopTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/NioTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/PromiseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/ReactorThreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Reactors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/ReadProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/SingleReactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xml/util/FileWriteReadUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xml/util/XmlTransferUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consumer/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framework/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/ProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/provider/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/Provider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/register/RemoteMapRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/register/RemoteMapRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/consumer/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/register/RemoteMapRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/register/RemoteMapRegister.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +154,7 @@
       <workItem from="1578388470856" duration="2916000" />
       <workItem from="1578881164411" duration="7915000" />
       <workItem from="1578982858730" duration="13705000" />
-      <workItem from="1579054015988" duration="605000" />
+      <workItem from="1579054015988" duration="2143000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1569836408128</created>

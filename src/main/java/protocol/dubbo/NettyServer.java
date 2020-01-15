@@ -16,7 +16,9 @@ import java.net.InetSocketAddress;
  * 基于netty的dubbo协议
  * @author 曾鹏
  *
- * ChannelHandler
+ * ChannelPipeline：Channel的负责组织ChannelHandler的组件。
+ *
+ * ChannelHandler：
  *
  */
 public class NettyServer {
