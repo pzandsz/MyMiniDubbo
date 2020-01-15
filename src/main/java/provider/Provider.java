@@ -15,14 +15,14 @@ import java.io.IOException;
 public class Provider {
 
     public static void main(String[] args) throws IOException {
-        //1.本地注册{服务名：实现类}
+        //1.本地注册{服务名：实现类}  写入到内存中
         LocalRegister.register(HelloService.class.getName(), HelloServiceImp.class);
 
         //2.远程注册{服务名:List<URL>}
         URL url=new URL("localhost",8080);
         RemoteMapRegister.register(HelloService.class.getName(),url);
 
-        //3.启动tomcat
+        //3.启动netty
         NettyServer nettyServer=new NettyServer();
 
         nettyServer.start("localhost",8080);

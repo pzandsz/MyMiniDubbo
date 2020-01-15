@@ -2,87 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70cf0afa-64ba-4c58-802f-b42ffa0801af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sensetive/SensetiveWordFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sensetiveWord.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/EventGroupLoopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/NioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/PromiseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ReactorThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/Reactors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ReadProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/SingleReactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xml/util/FileWriteReadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xml/util/XmlTransferUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consumer/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/framework/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/ProxyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/provider/api/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/api/HelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/provider/imp/HelloServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/imp/HelloServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/provider/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/Provider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/register/RemoteMapRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/register/RemoteMapRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/consumer/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/protocol/dubbo/NettyServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/register/RemoteMapRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/register/RemoteMapRegister.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-2005140238">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="107" />
-          <entry key="PLAIN_TEXT" value="3" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="FavoritesManager">
+    <favorites_list name="MyMiniDubbo" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/provider/Provider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/consumer/Consumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/framework/ProxyFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/register/RemoteMapRegister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/provider/api/HelloService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/provider/imp/HelloServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/consumer/Consumer.java" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -92,70 +61,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="813" />
-    <option name="width" value="1120" />
-    <option name="height" value="628" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyMiniDubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyMiniDubbo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyMiniDubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyMiniDubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyMiniDubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyMiniDubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyMiniDubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyMiniDubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyMiniDubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyMiniDubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyMiniDubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyMiniDubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1W1DfjYP2irn7orEvkiiJKRlrvI" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569837222155" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570616860665" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -171,7 +81,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Consumer">
+  <component name="RunManager" selected="Application.ReactorThreads">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Client" />
+      <module name="MyMiniDubbo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="consumer.Consumer" />
       <module name="MyMiniDubbo" />
@@ -185,12 +108,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Provider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="provider.Provider" />
+    <configuration name="PromiseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.PromiseTest" />
       <module name="MyMiniDubbo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="provider.*" />
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.ReactorThreads" />
+      <module name="MyMiniDubbo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleReactor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.SingleReactor" />
+      <module name="MyMiniDubbo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -199,13 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Provider" />
       <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.PromiseTest" />
+      <item itemvalue="Application.SingleReactor" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.ReactorThreads" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.ReactorThreads" />
+        <item itemvalue="Application.SingleReactor" />
+        <item itemvalue="Application.PromiseTest" />
         <item itemvalue="Application.Consumer" />
-        <item itemvalue="Application.Provider" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +174,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569836178441</updated>
-      <workItem from="1569836179721" duration="1025000" />
+      <workItem from="1569836179721" duration="1254000" />
+      <workItem from="1570604143869" duration="8441000" />
+      <workItem from="1570678872428" duration="645000" />
+      <workItem from="1572487327785" duration="663000" />
+      <workItem from="1578308314847" duration="3796000" />
+      <workItem from="1578388470856" duration="2916000" />
+      <workItem from="1578881164411" duration="7915000" />
+      <workItem from="1578982858730" duration="13705000" />
+      <workItem from="1579054015988" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1569836408128</created>
@@ -228,142 +191,44 @@
       <option name="project" value="LOCAL" />
       <updated>1569836408128</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix">
+      <created>1569837229616</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569837229616</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1025000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix" />
     <option name="LAST_COMMIT_MESSAGE" value="fix" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/framework/ProxyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/repository/io/netty/netty-all/4.1.16.Final/netty-all-4.1.16.Final.jar!/io/netty/channel/ChannelFuture.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/register/RemoteMapRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-763">
-          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/protocol/dubbo/NettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/imp/HelloServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/api/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/provider/Provider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/consumer/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

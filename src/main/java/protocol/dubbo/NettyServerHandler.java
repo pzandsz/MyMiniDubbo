@@ -7,13 +7,18 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandler;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import provider.LocalRegister;
+import register.RemoteMapRegister;
 
 import java.lang.reflect.Method;
 
 /**
+ *
+ * Inbound
+ *
  * 继承ChannelInboundHandlerAdapter
  * @author 曾鹏
  */
+
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     /**
      * 将数据注册到注册中心(写入文本文件)
@@ -26,15 +31,17 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         Invocation invocation= (Invocation) msg;
 
-        System.out.println("server: msg==>"+msg);
+        System.out.println("服务提供方收到RPC传输的信息: "+msg);
         //获得Class
         Class serviceImpl= LocalRegister.get(invocation.getInterfaceName());
+//        Class serviceImpl = RemoteMapRegister.get(invocation.getInterfaceName());
 
         Method method = serviceImpl.getMethod(invocation.getMethodName(), invocation.getParamTypes());
 
         //通过反射调用方法
+        System.out.println("反射执行方法 start: ");
         Object result=method.invoke(serviceImpl.newInstance(),invocation.getParams());
-        System.out.println("Netty---------"+result.toString());
+        System.out.println("反射执行方法 end，result is "+result.toString());
         ctx.write(result);
 
     }

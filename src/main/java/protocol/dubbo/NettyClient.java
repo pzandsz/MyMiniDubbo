@@ -34,7 +34,7 @@ public class NettyClient {
 
 
         /**
-         * 配置并启动netty
+         * 配置并启动netty  客户端
          */
         EventLoopGroup group = new NioEventLoopGroup();
 
@@ -42,6 +42,8 @@ public class NettyClient {
         //invocation是需要发送的信息
         nettyClientHandler.setPara(invocation);
         try {
+            //EventLoopGroup
+            //handler:事件处理器
             Bootstrap bootstrap  = new Bootstrap()
                     .group(group)
                     .channel(NioSocketChannel.class)
@@ -49,6 +51,7 @@ public class NettyClient {
                     .handler(new ChannelInitializer<SocketChannel>(){
                         @Override
                         public void initChannel(SocketChannel ch) throws Exception{
+                            //pipeline:执行链路  一定要对传输的数据进行转码的动作
                             ch.pipeline().addLast(
                                     new ObjectDecoder(1024, ClassResolvers
                                             .cacheDisabled(this.getClass().getClassLoader())));

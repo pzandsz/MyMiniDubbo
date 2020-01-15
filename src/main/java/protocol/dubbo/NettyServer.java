@@ -15,6 +15,9 @@ import java.net.InetSocketAddress;
 /**
  * 基于netty的dubbo协议
  * @author 曾鹏
+ *
+ * ChannelHandler
+ *
  */
 public class NettyServer {
 
@@ -29,6 +32,7 @@ public class NettyServer {
     public void start(String hostName, int port){
 
         try {
+
             bootstrap = new ServerBootstrap();
             eventLoopGroup = new NioEventLoopGroup();
             bootstrap.group(eventLoopGroup)
@@ -37,6 +41,7 @@ public class NettyServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
+                            //必须传输的数据进行编码转换
                             socketChannel.pipeline().
                                     addLast(new ObjectDecoder(1024*1024,
                                             ClassResolvers.weakCachingConcurrentResolver(this.getClass().getClassLoader())))

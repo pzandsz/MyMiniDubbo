@@ -39,7 +39,7 @@ public class ProxyFactory {
                 //HttpClient httpClient=new HttpClient();
 
 
-                //发送给服务提供者的信息，服务提供方将通过这些信息和反射机制来执行方法并返回结果
+                //1.发送给服务提供者的信息，服务提供方将通过这些信息和反射机制来执行方法并返回结果
                 Invocation invocation=new Invocation(interfaceClass.getName(),method.getName(),
                         method.getParameterTypes(),args);
 

@@ -31,6 +31,14 @@ public class RemoteMapRegister {
         saveFile();
     }
 
+
+    public static Class get(String interfaceName){
+        //1.读取文件
+        Map<String, List<URL>> file = getFile();
+        //2.返回Class文件信息
+        return file.get(interfaceName).getClass();
+    }
+
     /**
      * 模拟一个随机的负载均衡策略(完全随机，没有根据权重之类的进行随机)
      * @param interfaceName
