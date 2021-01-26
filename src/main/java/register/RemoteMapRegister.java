@@ -1,8 +1,6 @@
 package register;
 
-import com.sun.org.apache.regexp.internal.RE;
 import framework.URL;
-
 import java.io.*;
 import java.util.*;
 
@@ -10,10 +8,10 @@ import java.util.*;
  * 用于存储远程信息
  * @author 曾鹏
  */
-public class RemoteMaopRegister {
+public class RemoteMapRegister {
     private static Map<String,List<URL>> REGISTER=new HashMap<String, List<URL>>();
 
-    private  final static String path="D://MyMiniDubbo/register.txt";
+    private  final static String path = "register.txt";
 
     /**
      * 注册
@@ -37,11 +35,11 @@ public class RemoteMaopRegister {
      * @return
      */
     public static URL random(String interfaceName){
-        REGISTER=getFile();
-        if(REGISTER!=null){
-            Random random=new Random();
+        REGISTER = getFile();
+        if(REGISTER != null){
+            Random random = new Random();
             List<URL> urls = REGISTER.get(interfaceName);
-            int n=random.nextInt(urls.size());
+            int n = random.nextInt(urls.size());
             return urls.get(n);
         }
         return null;
@@ -53,15 +51,14 @@ public class RemoteMaopRegister {
      * 写入文本
      */
     public static void saveFile() throws IOException {
-        ObjectOutputStream obs=null;
+        ObjectOutputStream obs = null;
         try {
             FileOutputStream fileOutputStream=new FileOutputStream(path);
             //包装成ObjectOutputStream
-            obs =new ObjectOutputStream(fileOutputStream);
+            obs = new ObjectOutputStream(fileOutputStream);
             //将map对象存入文件中
             obs.writeObject(REGISTER);
             obs.flush();
-
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -80,9 +77,9 @@ public class RemoteMaopRegister {
 
         try {
             FileInputStream fileInputStream = new FileInputStream(path);
-            ObjectInputStream ois=new ObjectInputStream(fileInputStream);
+            ObjectInputStream ois = new ObjectInputStream(fileInputStream);
 
-             return  (Map<String, List<URL>>) ois.readObject();
+             return (Map<String, List<URL>>) ois.readObject();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

@@ -9,8 +9,6 @@ import java.io.Serializable;
  * @author 曾鹏
  */
 @Data
-@Setter
-@Getter
 @NoArgsConstructor
 public class URL implements Serializable {
     private String hostname;

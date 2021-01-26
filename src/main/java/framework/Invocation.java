@@ -6,14 +6,12 @@ import java.io.Serializable;
 import java.util.Arrays;
 
 /**
- * 调用对象信息,通过这些信息可以将一个接口实现类复原
+ * 调用对象信息,通过这些信息可以将一个接口实现类复原(反射)
  * @author 曾鹏
  */
 @Data
 @Setter
 @Getter
-@AllArgsConstructor
-@NoArgsConstructor
 public class Invocation implements Serializable {
 
     /**
@@ -30,11 +28,22 @@ public class Invocation implements Serializable {
      */
     private Class[] paramTypes;
 
+
+
     /**
      * 参数列表
      */
     private Object[] params;
 
+    public Invocation() {
+    }
+
+    public Invocation(String interfaceName, String methodName, Class[] paramTypes, Object[] params) {
+        this.interfaceName = interfaceName;
+        this.methodName = methodName;
+        this.paramTypes = paramTypes;
+        this.params = params;
+    }
 
     @Override
     public String toString() {

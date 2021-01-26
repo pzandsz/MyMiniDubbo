@@ -1,5 +1,6 @@
 package protocol.dubbo;
 
+import framework.Invocation;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -41,7 +42,7 @@ public class NettyServer {
                                     addLast(new ObjectDecoder(1024*1024,
                                             ClassResolvers.weakCachingConcurrentResolver(this.getClass().getClassLoader())))
                                     .addLast(new ObjectEncoder())
-                                    .addLast(new NettyServerHandler());
+                                    .addLast(new NettyServerHandler<Invocation>());
                         }
                     });
 

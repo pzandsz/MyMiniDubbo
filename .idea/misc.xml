@@ -11,11 +11,4 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
-  <component name="RemoteRepositoriesConfiguration">
-    <remote-repository>
-      <option name="id" value="65aec563-2bb4-47fd-a6c3-048d1d19220a" />
-      <option name="name" value="65aec563-2bb4-47fd-a6c3-048d1d19220a" />
-      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
-    </remote-repository>
-  </component>
 </project>

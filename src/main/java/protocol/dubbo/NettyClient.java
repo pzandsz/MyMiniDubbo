@@ -27,19 +27,20 @@ public class NettyClient {
     public NettyClient(String host,int port,Invocation invocation){
         this.host = host;
         this.port = port;
-        this.invocation=invocation;
+        this.invocation = invocation;
     }
 
-    public String send() throws Exception{
+    public String send() {
 
 
         /**
-         * 配置并启动netty
+         * config and start up netty
          */
         EventLoopGroup group = new NioEventLoopGroup();
 
-        NettyClientHandler nettyClientHandler = new NettyClientHandler();
-        //invocation是需要发送的信息
+        NettyClientHandler nettyClientHandler = new NettyClientHandler<String>();
+
+        //invocation: 需要发送的信息
         nettyClientHandler.setPara(invocation);
         try {
             Bootstrap bootstrap  = new Bootstrap()
@@ -67,6 +68,6 @@ public class NettyClient {
         } finally {
             group.shutdownGracefully();
         }
-        return nettyClientHandler.getResult();
+        return (String) nettyClientHandler.getResult();
     }
 }

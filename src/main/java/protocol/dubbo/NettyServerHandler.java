@@ -6,6 +6,7 @@ import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandler;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import lombok.extern.slf4j.Slf4j;
 import provider.LocalRegister;
 
 import java.lang.reflect.Method;
@@ -14,7 +15,9 @@ import java.lang.reflect.Method;
  * 继承ChannelInboundHandlerAdapter
  * @author 曾鹏
  */
-public class NettyServerHandler extends ChannelInboundHandlerAdapter {
+@Slf4j
+public class NettyServerHandler<T extends Invocation> extends ChannelInboundHandlerAdapter {
+
     /**
      * 将数据注册到注册中心(写入文本文件)
      *
@@ -24,17 +27,18 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
      */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        Invocation invocation= (Invocation) msg;
+        log.info("channel start read.");
 
-        System.out.println("server: msg==>"+msg);
+        T invocation = (T) msg;
+
         //获得Class
-        Class serviceImpl= LocalRegister.get(invocation.getInterfaceName());
+        Class serviceImpl = LocalRegister.get(invocation.getInterfaceName());
 
         Method method = serviceImpl.getMethod(invocation.getMethodName(), invocation.getParamTypes());
 
         //通过反射调用方法
-        Object result=method.invoke(serviceImpl.newInstance(),invocation.getParams());
-        System.out.println("Netty---------"+result.toString());
+        Object result = method.invoke(serviceImpl.newInstance(),invocation.getParams());
+
         ctx.write(result);
 
     }

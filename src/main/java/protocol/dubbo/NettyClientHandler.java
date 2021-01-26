@@ -3,53 +3,45 @@ package protocol.dubbo;
 import framework.Invocation;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-
+import lombok.extern.slf4j.Slf4j;
 
 
 /**
- * 继承ChannelInboundHandlerAdapter
+ * Implements ChannelInboundHandlerAdapter
  * @author 
  */
-public class NettyClientHandler extends ChannelInboundHandlerAdapter{
+@Slf4j
+public class NettyClientHandler<T> extends ChannelInboundHandlerAdapter{
     private ChannelHandlerContext context;
-    private String result;
+    private T result;
     private Invocation invocation;
 
 
+    /**
+     * While channel active , invoke this method
+     * @param ctx
+     */
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws InterruptedException {
-        System.out.println("成功建立连接!!!");
-        Thread.sleep(1000);
-        context=ctx;
-        System.out.println("开始想服务端发送数据....");
-        Thread.sleep(1000);
+    public void channelActive(ChannelHandlerContext ctx){
+        log.info("channel active success , ctx:{}",ctx);
+        context = ctx;
         context.writeAndFlush(invocation);
-        System.out.println("发送完毕！");
-
-
     }
 
     /**
-     * 收到服务端数据，唤醒等待线程
+     * Wait until wake up signal
      */
     @Override
     public synchronized void channelRead(ChannelHandlerContext ctx, Object msg) {
-       Thread.sleep(1000);
-        result = (String) msg;
-        System.out.println("接受服务端返回的执行结果,result: "+result);
+        result = (T) msg;
     }
-
-    /**
-     * 写出数据，开始等待唤醒
-     */
-
 
 
     void setPara(Invocation invocation) {
         this.invocation = invocation;
     }
 
-    public String getResult() {
+    public T getResult() {
         return result;
     }
 }
